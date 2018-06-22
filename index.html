@@ -35,9 +35,10 @@
           <option value="student">Student</option>
           <option value="other">Other</option>  
         </select> 
-
-        <label  for="role_other_text" id="role_other_text">Other:</label>
-        <input type="text" id="role_other_text" name="user_role_other_text">     
+        <div id="other_text_container">
+          <label  for="other_title" id="role_other_text">Other:</label>
+          <input type="text" id="other_title" name="user_role_other_text" placeholder="Job Role">
+        </div>     
       </fieldset>
       
       <fieldset class="shirt">
@@ -57,8 +58,8 @@
           <label for="design">Design:</label>
           <select id="design" name="user_design">
             <option>Select Theme</option>
-            <option value="js puns">Theme - JS Puns</option>
-            <option value="heart js">Theme - I &#9829; JS</option>
+            <option id="jsPuns" value="js puns">Theme - JS Puns</option>
+            <option id="heartJS" value="heart js">Theme - I &#9829; JS</option>
           </select>
         </div>
 
